@@ -1,7 +1,9 @@
 import 'package:app/pages/Home.dart';
-import 'package:app/pages/mjpeg.dart';
+// <-- Pastikan file ini ada
+import 'package:app/pages/mjpeg_new.dart';   // <-- Jika pakai MjpegView
 import 'package:flutter/material.dart';
 import 'package:app/utils/routes.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -14,12 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: Routes.mjpegStreamRoute,
       routes: {
-        Routes.homeRoute: (context) => const Home() as Widget,
-        Routes.mjpegStreamRoute: (context) => const MjpegExample(),
+        Routes.homeRoute: (context) => const Home(),
+  
       },
     );
   }
 }
-
-
-

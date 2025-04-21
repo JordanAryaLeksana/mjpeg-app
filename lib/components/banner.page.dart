@@ -14,7 +14,7 @@ class Bannerpage extends StatelessWidget {
         color: Colors.transparent,
         child: Container(
           width: MediaQuery.of(context).size.width * 0.9,
-          height: MediaQuery.of(context).size.height * 0.2,
+          height: MediaQuery.of(context).size.height * 0.28,
           decoration: BoxDecoration(color: Color(0xfff5f5f5),borderRadius: BorderRadius.circular(20)),
           child: Row(children: [
             Column(
@@ -23,9 +23,20 @@ class Bannerpage extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.fromLTRB(25, 25, 0, 15),
                   width: MediaQuery.of(context).size.width * 0.5,
-                  child: const Text('This Application can be run with IP adress or with Wireless Connection with Drone', style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600
+                  child: const Text(
+                    'Drone Streaming Application',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600
+                    ),
+                  ), 
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(25, 0, 0, 0),
+                  width: MediaQuery.of(context).size.width * 0.5,
+                  child : const Text('This Application can be run with IP adress or with Wireless Connection with Drone', style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.normal
                   ),),
                 )
               ],

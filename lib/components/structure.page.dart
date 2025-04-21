@@ -12,7 +12,10 @@ class Structurepage extends StatelessWidget {
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          StructureIconPage(color: 0xffee615e, iconData: Icons.comment, text: 'VideoVLC', ),
+          StructureIconPage(color: 0xFFA0522D, iconData: Icons.comment, text: 'VideoVLC', ),
+          StructureIconPage(color: 0xFF8B3A3A, iconData: Icons.access_alarm, text: 'VideoVLC', ),
+          StructureIconPage(color: 0xFF5D8AA8, iconData: Icons.camera_alt_rounded, text: 'VideoVLC', ),
+          StructureIconPage(color: 0xFFF5F5DC, iconData: Icons.mail_lock_rounded, text: 'VideoVLC', ),
         ],
       ),
     );

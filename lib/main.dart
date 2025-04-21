@@ -1,3 +1,4 @@
+import 'package:app/view/Home.dart';
 import 'package:app/view/vlc-video.dart';
 
 import 'package:flutter/material.dart';
@@ -15,8 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: Routes.homeRoute,
       routes: {
-        Routes.homeRoute: (context) => VLCvideopage(key: UniqueKey()),
-        Routes.vlcVideo: (context) => VLCvideopage(key: UniqueKey()),
+        Routes.homeRoute: (context) => const Home() as Widget,
+        // Routes.vlcVideo: (context) => VLCvideopage(key: UniqueKey()),
       },
     );
   }

@@ -1,0 +1,1 @@
+C:\Mobiledev\videoVLC\app\build\app\intermediates\cxx\RelWithDebInfo\2y212v4n\obj\x86_64

@@ -1,6 +1,5 @@
-import 'package:app/pages/Home.dart';
-// <-- Pastikan file ini ada
-import 'package:app/pages/mjpeg_new.dart';   // <-- Jika pakai MjpegView
+import 'package:app/view/vlc-video.dart';
+
 import 'package:flutter/material.dart';
 import 'package:app/utils/routes.dart';
 
@@ -14,10 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: Routes.mjpegStreamRoute,
+      initialRoute: Routes.homeRoute,
       routes: {
-        Routes.homeRoute: (context) => const Home(),
-  
+        Routes.homeRoute: (context) => VLCvideopage(key: UniqueKey()),
+        Routes.vlcVideo: (context) => VLCvideopage(key: UniqueKey()),
       },
     );
   }

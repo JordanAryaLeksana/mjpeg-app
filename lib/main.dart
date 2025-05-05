@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       initialRoute: Routes.homeRoute,
       routes: {
         Routes.homeRoute: (context) => const Home() as Widget,
-        // Routes.vlcVideo: (context) => VLCvideopage(key: UniqueKey()),
+        Routes.vlcVideo: (context) => VLCvideopage(key: UniqueKey()),
       },
     );
   }

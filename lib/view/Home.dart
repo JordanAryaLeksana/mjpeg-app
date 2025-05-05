@@ -1,4 +1,5 @@
 import 'package:app/components/banner.page.dart';
+import 'package:app/components/card.page.dart';
 import 'package:app/components/structure.page.dart';
 import 'package:app/components/title.page.dart';
 import 'package:app/components/welcome.page.dart';
@@ -9,17 +10,19 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Welcomepage(),
-            Titlepage(),
-            Structurepage(),
-            Bannerpage()
-            
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Welcomepage(),
+              Titlepage(),
+              Structurepage(),
+              Bannerpage(),
+              CardPage()
+            ],
+          ),
         ),
       ),
     );

@@ -17,8 +17,9 @@ class _VLCvideopageState extends State<VLCvideopage> {
     super.initState();
 
     _vlcViewController = VlcPlayerController.network(
-      'rtmp://192.168.1.10:1935/live/stream',
-      hwAcc: HwAcc.full,
+      'rtmp://10.125.241.150/live/test',
+        // 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+      hwAcc: HwAcc.decoding,
       autoPlay: true,
       options: VlcPlayerOptions(),
     );
